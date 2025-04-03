@@ -1,42 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-        <head>
-                        <meta charset="utf-8" />
-                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                        <meta name="generator" content="Pelican" />
-                        <title>最初の投稿</title>
-                        <link rel="stylesheet" href="./theme/css/main.css" />
-    <meta name="description" content="Hi" />
-        </head>
+<head>
+        <meta charset="utf-8" />
+        <title>最初の投稿</title>
+        <link rel="stylesheet" href="./theme/css/main.css" />
 
-        <body id="index" class="home">
-                <header id="banner" class="body">
-                        <h1><a href="./">h29</a></h1>
-                        <nav><ul>
-                                                <li class="active"><a href="./category/tesuto.html">テスト</a></li>
-                                                <li><a href="./category/yeah.html">yeah</a></li>
-                        </ul></nav>
-                </header><!-- /#banner -->
-  <section id="content" class="body">
-    <article>
-      <header>
-        <h1 class="entry-title">
-          <a href="./FirstPost.html" rel="bookmark"
-             title="Permalink to 最初の投稿">最初の投稿</a></h1>
-      </header>
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 
-      <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2025-04-01T00:00:00+09:00">
-                Published: 2025-04-01(火)
+	<script src="./theme/js/mousetrap.js"> </script>
+</head>
+
+<body id="index" class="home">
+<script>
+function greyoff(img)
+{
+	document.getElementById(img).className = "greyoff";
+}
+
+function greyon(img)
+{
+	document.getElementById(img).className = "greyon";
+}
+</script>
+
+        <header id="banner" class="body">
+                <h1><a href="./">h29 </a></h1>
+                <!--nav><ul>
+                    <li class="active"><a href="./category/tesuto.html">テスト</a></li>
+                    <li><a href="./category/yeah.html">yeah</a></li>
+                </ul></nav-->
+        </header><!-- /#banner -->
+<section id="pagecontent" class="body">
+	<script>
+	Mousetrap.bind('left', prev);
+	Mousetrap.bind('right', next);
+
+
+	function prev(element)
+	{
+		document.getElementById('prev').click();
+	}
+	function next(element)
+	{
+		document.getElementById('next').click();
+	}
+	</script>
+  <article>
+    <header>
+	<div>
+		<div style="float:left">
+		      <h1 class="entry-title">
+		        <a href="./FirstPost.html" rel="bookmark"
+		           title="Permalink to 最初の投稿">最初の投稿</a>
+		      </h1>
+		</div>
+		<div style="float:right"><h2>        <abbr class="published" title="2025-04-01T00:00:00+09:00">
+                2025-04-01(火)
         </abbr>
+</h2></div>
+	</div>
 
-                <address class="vcard author">
-                        By                                 <a class="url fn" href="./author/username.html">UserName</a>
-                </address>
-        <p>In <a href="./category/tesuto.html">テスト</a>.</p>
-<p>tags: <a href="./tag/tesuto.html">テスト</a> <a href="./tag/tou-gao.html">投稿</a> </p>        
-</footer><!-- /.post-info -->        <h2>最初の投稿です。</h2>
+	<div style="clear:both"></div>
+
+    </header>
+      <h2>最初の投稿です。</h2>
 <p>Hello <strong>world!</strong> My name is <em>User</em> @Japan.</p>
 <table>
 <thead>
@@ -59,37 +88,23 @@
 </code></pre></div>
 
 <p><img alt="Alt Text" src="./images/rect305.png"></p>
-      </div><!-- /.entry-content -->
 
-    </article>
-  </section>
-                <section id="extras" class="body">
-                                <div class="blogroll">
-                                        <h2>links</h2>
-                                        <ul>
-                                                        <li><a href="https://getpelican.com/">Pelican</a></li>
-                                                        <li><a href="https://www.python.org/">Python.org</a></li>
-                                                        <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
-                                                        <li><a href="#">You can modify those links in your config file</a></li>
-                                        </ul>
-                                </div><!-- /.blogroll -->
-                                <div class="social">
-                                        <h2>social</h2>
-                                        <ul>
 
-                                                        <li><a href="#">You can add links in your config file</a></li>
-                                                        <li><a href="#">Another social link</a></li>
-                                        </ul>
-                                </div><!-- /.social -->
-                </section><!-- /#extras -->
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <ul>
 
-                <footer id="contentinfo" class="body">
-                        <address id="about" class="vcard body">
-                                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
-                        </address><!-- /#about -->
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
 
-                        <p>The theme is by <a rel="nofollow" href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-                </footer><!-- /#contentinfo -->
+        <footer id="contentinfo" class="body">
+		<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+        </footer><!-- /#contentinfo -->
 
-        </body>
+</body>
 </html>
