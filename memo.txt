@@ -1,0 +1,11 @@
+・MakefileのGITHUB_PAGES_BRANCHをgh-pagesに変更。
+・gh-pagesブランチはgithub pages公開用。
+・Makefileのgithubコマンドに--no-history付ける。(容量せつやく。内部で update-ref -d refs/heads/main してる。)
+・dsコマンド追加(devserver)
+・Makefileの中見るとコマンドの中身見れる
+・contentフォルダの中のフォルダ名とtemplatesのファイル名が対応してるっぽい
+・make htmlで生成、make serveでローカルサーバー
+・pelican-neighbors is for article.next_article
+・https://hamada2029.github.io
+・git update-ref -d refs/heads/main 履歴なくす
+・
