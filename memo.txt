@@ -9,3 +9,6 @@
 ・https://hamada2029.github.io
 ・git update-ref -d refs/heads/main 履歴なくす
 ・
+・
+・
+・
